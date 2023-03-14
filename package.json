@@ -1,0 +1,41 @@
+{
+  "name": "canvas-to-react",
+  "version": "1.0.11",
+  "description": "一个小范围使用的canvas图片标注小工具",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "watch": "rollup -c -w",
+    "build": "rollup -c",
+    "serve": "live-server --watch=./index.html,./lib --port=9999"
+  },
+  "keywords": [
+    "图片标注",
+    "canvas"
+  ],
+  "author": "NeverStop1024",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "live-server": "^1.2.2",
+    "rollup": "^2.53.2",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "homepage": "https://github.com/woxinruyi/image-react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woxinruyi/image-react"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ]
+}
