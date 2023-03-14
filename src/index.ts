@@ -4,7 +4,7 @@ import Dot from './shape/Dot';
 import { Point } from './Types';
 import EventBus from './EventBus';
 
-export default class CanvasToMark extends EventBus {
+export default class CanvasToReact extends EventBus {
     lock: boolean = false // 只读模式
 
     MIN_WIDTH: number = 10
@@ -506,6 +506,7 @@ export default class CanvasToMark extends EventBus {
         if (shape.coor.length !== 2) return;
         const { labelFillStyle, strokeStyle, fillStyle, active, creating, coor, label } = shape
         let showLabel=label?label:this.currentLabel;
+        console.log("当前绘制标签内容")
         const [[x0, y0], [x1, y1]] = coor.map((a: Point) => a.map((b) => Math.round(b * this.scale)));
         this.ctx.save();
         this.ctx.fillStyle = fillStyle || this.fillStyle;

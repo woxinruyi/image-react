@@ -57,6 +57,7 @@ npm i canvas-to-mark
 | ctrlFillStyle     | string  |        #fff         |                  |  控制点填充颜色   |
 | ctrlRadius        | number  |          5          |                  |   控制点半径    |
 | pointRadius        | number  |          5          |                  |    圆半径     |
+| currentLabel        | number  |          5          |                  |    默认填充标签值     |
 | labelFillStyle    | string  |        #fff         |       支持       | label 填充颜色 |
 | labelFontSize        | number  |          12          |                  | label文字大小  |
 | labelFontColor    | string  |        #000         |       支持       | label 文字颜色 |
