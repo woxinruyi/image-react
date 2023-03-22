@@ -5,7 +5,7 @@ canvas图片标注工具
 <!-- [demo](https://codesandbox.io/s/throbbing-dust-tyn5wk?file=/index.html) | [效果](https://tyn5wk.csb.app/) -->
 [demo](https://codesandbox.io/s/boring-banach-tfpz34?file=/index.html) 
 
-![example_lhizmZ](https://imgloc.com/i/1ly1H)
+![example_lhizmZ](https://i.328888.xyz/2023/03/22/1ly1H.png)
 
 ## 简介
 
