@@ -5,7 +5,7 @@ canvas图片标注工具
 <!-- [demo](https://codesandbox.io/s/throbbing-dust-tyn5wk?file=/index.html) | [效果](https://tyn5wk.csb.app/) -->
 [demo](https://codesandbox.io/s/boring-banach-tfpz34?file=/index.html) 
 
-![example_lhizmZ](https://cdn.jsdelivr.net/gh/NeverStop1024/images-store@main/blog/example_lhizmZ.png)
+![example_lhizmZ](https://imgloc.com/i/1ly1H)
 
 ## 简介
 
@@ -20,6 +20,8 @@ canvas图片标注工具
 - 支持添加、编辑标签。
 
 - 每个形状有唯一 uuid，没有则自动生成。
+
+- 支持删除快捷键删除图片标签
 
 ## 1、使用
 
@@ -41,7 +43,14 @@ canvas图片标注工具
 
 ```
 npm i canvas-to-react
+``` ts中引用方式
+import CanvasToReact from 'canvas-to-react';
+const canvasSelect = new CanvasToReact(
+        boxRef.current,
+        'https://www.zhuhailiang.com/api/images/onepiece.png',
+      );
 ```
+
 
 ## 1、实例属性
 
@@ -94,5 +103,5 @@ npm i canvas-to-react
 | -------- | :------: | :----------------: |
 | 'Escape', 'Backspace','Delete' |   删除标签   |   当前选中的标签   |
 
-## 注释
+## 引用和参考备注
 本项在[canvas-select](https://github.com/heylight/canvas-select)基础上做出改动实现，感谢该作者🙏。
