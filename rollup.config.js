@@ -9,7 +9,7 @@ export default {
     exports: 'auto',
     file: 'dist/index.js',
     format: 'umd',
-    name: 'CanvasToMark',
+    name: 'CanvasToReact',
     sourcemap: true,
   },
   plugins: [

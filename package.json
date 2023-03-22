@@ -1,7 +1,7 @@
 {
   "name": "canvas-to-react",
-  "version": "1.0.11",
-  "description": "一个小范围使用的canvas图片标注小工具",
+  "version": "1.1.2",
+  "description": "一个公司需求而使用的canvas图片标注小工具",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

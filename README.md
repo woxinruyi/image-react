@@ -1,8 +1,9 @@
-# canvas-to-mark
+# canvas-to-react
 
 canvas图片标注工具  
 
-[demo](https://codesandbox.io/s/throbbing-dust-tyn5wk?file=/index.html) | [效果](https://tyn5wk.csb.app/)
+<!-- [demo](https://codesandbox.io/s/throbbing-dust-tyn5wk?file=/index.html) | [效果](https://tyn5wk.csb.app/) -->
+[demo](https://codesandbox.io/s/boring-banach-tfpz34?file=/index.html) 
 
 ![example_lhizmZ](https://cdn.jsdelivr.net/gh/NeverStop1024/images-store@main/blog/example_lhizmZ.png)
 
@@ -39,7 +40,7 @@ canvas图片标注工具
 支持 UMD 模块规范
 
 ```
-npm i canvas-to-mark
+npm i canvas-to-react
 ```
 
 ## 1、实例属性
@@ -88,6 +89,10 @@ npm i canvas-to-mark
 | load     |    无    |    图片加载完成    |
 | error    |  error   |      错误信息      |
 
+## 3、快捷键事件
+| 事件名称 | 回调参数 |        说明        |
+| -------- | :------: | :----------------: |
+| 'Escape', 'Backspace','Delete' |   删除标签   |   当前选中的标签   |
 
 ## 注释
-本项在[canvas-select](https://github.com/heylight/canvas-select)基础上做了些改动，感谢原作者🙏
+本项在[canvas-select](https://github.com/heylight/canvas-select)基础上做出改动实现，感谢该作者🙏。

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/canvas-to-mark.iml" filepath="$PROJECT_DIR$/.idea/canvas-to-mark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/canvas-to-react.iml" filepath="$PROJECT_DIR$/.idea/canvas-to-react.iml" />
     </modules>
   </component>
 </project>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>canvas-to-mark示例</title>
+    <title>canvas-to-react示例</title>
     <style>
         body{
             display: flex;
@@ -36,7 +36,7 @@
   <script src="./dist/index.js"></script>
   <script>
     const output = document.querySelector('pre');
-    const canvasSelect = new CanvasToMark('.container', '1.webp');
+    const canvasSelect = new CanvasToReact('.container', '1.webp');
     canvasSelect.activeStrokeStyle = 'rgb(52,244,39)';
     canvasSelect.zoomCenter = 'mouse'
     canvasSelect.pointRadius = 10
