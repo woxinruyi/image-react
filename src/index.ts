@@ -25,7 +25,7 @@ export default class CanvasToReact extends EventBus {
 
   labelFillStyle = '#fff';
 
-  currentLabel = '标签2';
+  currentLabel = '';
 
   labelFontSize = 12;
 
@@ -76,6 +76,8 @@ export default class CanvasToReact extends EventBus {
   originY: number = 0; // 原点y
 
   scaleStep: number = 0; // 缩放步长
+
+  editBoolean:Boolean=false; //实例是否发生变更 
 
   zoomCenter: 'canvasCenter' | 'mouse' = 'canvasCenter'; // 缩放中心 canvasCenter画布中心 mouse鼠标
 
@@ -220,6 +222,7 @@ export default class CanvasToReact extends EventBus {
           }
           this.update();
         } else if (this.createType > 0 && this.isInBackground(e)) {
+          this.editBoolean=true;
           // 创建矩形/多边形
           let newShape;
           const nx = Math.round(offsetX - this.originX / this.scale);
@@ -718,6 +721,7 @@ export default class CanvasToReact extends EventBus {
    * @param label 文本
    */
   drawLabel(point: Point, label: string = '', labelFillStyle = '') {
+    this.editBoolean=true;
     if (label.length) {
       const newStr =
         label.length < this.labelMaxLen + 1
@@ -790,6 +794,7 @@ export default class CanvasToReact extends EventBus {
    * @param index number
    */
   deleteByIndex(index: number) {
+    this.editBoolean=true;
     const num = this.dataset.findIndex((x) => x.index === index);
     if (num > -1) {
       this.emit('delete', this.dataset[num]);
